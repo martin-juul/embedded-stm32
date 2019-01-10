@@ -1,92 +1,28 @@
 #include <mbed.h>
 #include "LCD_DISCO_F746NG.h"
 #include "DHT.h"
+#include "display.h"
 #include <iostream>
-
-LCD_DISCO_F746NG lcd;
-DigitalOut led1(LED1);
-DigitalOut led2(D2);
-
-DHT sensor(A0, SEN51035P);
-AnalogIn vibrationSensor(A1);
-AnalogIn soundSensor(A2);
+#include "fallout.h"
 
 Serial usbCom(USBTX, USBRX);
 
-uint32_t LCD_BACKGROUND = 0xFF011301;
-uint32_t LCD_TEXT_BACKGROUND = 0xFF1D3D1C;
-uint32_t LCD_TEXT_COLOR = 0xFF3DF67C;
+LCD_DISCO_F746NG lcd;
 
-void clearDisplay()
-{
-  lcd.Clear(LCD_BACKGROUND);
-  lcd.SetBackColor(LCD_TEXT_BACKGROUND);
-  lcd.SetTextColor(LCD_TEXT_COLOR);
-}
+DigitalOut led1(LED1);
+DigitalOut led2(D2);
 
-void boot()
-{
-  led1 = 1;
-  lcd.Init();
+DigitalOut btn(D3);
 
-  clearDisplay();
+DHT dhtSensor(A0, SEN51035P);
+AnalogIn vibrationSensor(A1);
+AnalogIn soundSensor(A2);
 
-  lcd.DisplayStringAt(0, LINE(1), (uint8_t *)"Booting Hercules...", CENTER_MODE);
-  lcd.DisplayStringAt(0, LINE(4), (uint8_t *)"Please wait", CENTER_MODE);
-
-  wait(1);
-
-  clearDisplay();
-}
-
-int is_earth_quake()
-{
-  if (vibrationSensor.read() > 0.06)
-  {
-    led2 = 1;
-
-    return 1;
-  }
-
-  led2 = 0;
-
-  return 0;
-}
-
-void run_temp_humid()
-{
-  int error = 0;
-  float h = 0.0f, c = 0.0f;
-
-  error = sensor.readData();
-  if (0 == error)
-  {
-    c = sensor.ReadTemperature(CELCIUS);
-    h = sensor.ReadHumidity();
-
-    char temp[32];
-    char humid[32];
-
-    sprintf(temp, "Temperature: %d C", (int)c);
-    sprintf(humid, "Humidity: %d %%", (int)h);
-
-    lcd.DisplayStringAt(0, LINE(7), (uint8_t *)temp, CENTER_MODE);
-    lcd.DisplayStringAt(0, LINE(8), (uint8_t *)humid, CENTER_MODE);
-  }
-  else
-  {
-    //usbCom.printf("Error: %d\n", error);
-  }
-
-  char earth_quake[32];
-  sprintf(earth_quake, "Is Earthquake: %d", is_earth_quake());
-  lcd.DisplayStringAt(0, LINE(9), (uint8_t *)earth_quake, CENTER_MODE);
-}
-
+// Counter
 int counter_max = 9999;
 int counter_current = 0;
 
-void run_counter()
+void counterTick()
 {
   //usbCom.printf("%d max\n", counter_max);
   //usbCom.printf("%d current\n", counter_current);
@@ -104,16 +40,92 @@ void run_counter()
   char display_int[32];
   sprintf(display_int, "Count: %04u", counter_current);
 
-  lcd.DisplayStringAt(0, LINE(5), (uint8_t *)display_int, CENTER_MODE);
+  lcd.DisplayStringAt(0, LINE(LCD_LINE_COUNTER), (uint8_t *)display_int, CENTER_MODE);
 }
 
+// Display
+
+void clearDisplay()
+{
+  lcd.Clear(LCD_BACKGROUND);
+  lcd.SetBackColor(LCD_TEXT_BACKGROUND);
+  lcd.SetTextColor(LCD_TEXT_COLOR);
+}
+
+// Sensors
+
+int earthQuakeDetected()
+{
+  if (vibrationSensor.read() > 0.06)
+  {
+    led2 = 1;
+
+    return 1;
+  }
+
+  led2 = 0;
+
+  return 0;
+}
+
+void displayCurrentHT()
+{
+  int error = 0;
+  float h = 0.0f, c = 0.0f;
+
+  error = dhtSensor.readData();
+  if (0 == error)
+  {
+    c = dhtSensor.ReadTemperature(CELCIUS);
+    h = dhtSensor.ReadHumidity();
+
+    char temp[32];
+    char humid[32];
+
+    sprintf(temp, "Temperature: %d C", (int)c);
+    sprintf(humid, "Humidity: %d %%", (int)h);
+
+    lcd.DisplayStringAt(0, LINE(LCD_LINE_HUMID), (uint8_t *)temp, CENTER_MODE);
+    lcd.DisplayStringAt(0, LINE(LCD_LINE_TEMP), (uint8_t *)humid, CENTER_MODE);
+  }
+}
+
+void displayEarthQuakeStatus()
+{
+  char earth_quake[32];
+  sprintf(earth_quake, "Is Earthquake: %d", earthQuakeDetected());
+
+  lcd.DisplayStringAt(0, LINE(LCD_LINE_EARTH_QUAKE), (uint8_t *)earth_quake, CENTER_MODE);
+}
+
+// Setup
+void boot()
+{
+  led1 = 1;
+  lcd.Init();
+
+  clearDisplay();
+
+  //uint8_t *image = (uint8_t *)fallout;
+  //lcd.DrawBitmap(0, 0, image);
+
+  lcd.DisplayStringAt(0, LINE(1), (uint8_t *)"Booting Hercules...", CENTER_MODE);
+  lcd.DisplayStringAt(0, LINE(4), (uint8_t *)"Please wait", CENTER_MODE);
+
+  wait(1.0f);
+
+  clearDisplay();
+}
+
+// Main
 int main()
 {
   boot();
 
   while (true)
   {
-    run_temp_humid();
-    run_counter();
+    displayCurrentHT();
+    displayEarthQuakeStatus();
+    counterTick();
   }
 }
