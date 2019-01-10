@@ -5,15 +5,20 @@
 #include <iostream>
 #include "fallout.h"
 
+// Serial USB COM port
 Serial usbCom(USBTX, USBRX);
 
+// LCD port
 LCD_DISCO_F746NG lcd;
 
+// On-board LED
 DigitalOut led1(LED1);
+// External LED (red)
 DigitalOut led2(D2);
-
+// External button
 DigitalOut btn(D3);
 
+// External sensors
 DHT dhtSensor(A0, SEN51035P);
 AnalogIn vibrationSensor(A1);
 AnalogIn soundSensor(A2);
@@ -22,6 +27,10 @@ AnalogIn soundSensor(A2);
 int counter_max = 9999;
 int counter_current = 0;
 
+/**
+ * @brief Increases the current count or resets when counter_max is hit
+ * 
+ */
 void counterTick()
 {
   //usbCom.printf("%d max\n", counter_max);
@@ -45,6 +54,10 @@ void counterTick()
 
 // Display
 
+/**
+ * @brief Clears the main display & sets default colors 
+ * 
+ */
 void clearDisplay()
 {
   lcd.Clear(LCD_BACKGROUND);
@@ -54,6 +67,11 @@ void clearDisplay()
 
 // Sensors
 
+/**
+ * @brief Detects earth quakes. Sets the red led to ON/OFF.
+ * 
+ * @return int 
+ */
 int earthQuakeDetected()
 {
   if (vibrationSensor.read() > 0.06)
@@ -68,6 +86,10 @@ int earthQuakeDetected()
   return 0;
 }
 
+/**
+ * @brief Displays temperature (celsius) & humidity (humidity)
+ * 
+ */
 void displayCurrentHT()
 {
   int error = 0;
@@ -90,6 +112,10 @@ void displayCurrentHT()
   }
 }
 
+/**
+ * @brief Displays current earthquake status
+ * 
+ */
 void displayEarthQuakeStatus()
 {
   char earth_quake[32];
@@ -98,7 +124,10 @@ void displayEarthQuakeStatus()
   lcd.DisplayStringAt(0, LINE(LCD_LINE_EARTH_QUAKE), (uint8_t *)earth_quake, CENTER_MODE);
 }
 
-// Setup
+/**
+ * @brief Setup for app
+ * 
+ */
 void boot()
 {
   led1 = 1;
@@ -117,7 +146,11 @@ void boot()
   clearDisplay();
 }
 
-// Main
+/**
+ * @brief Application entry point
+ * 
+ * @return int 
+ */
 int main()
 {
   boot();
