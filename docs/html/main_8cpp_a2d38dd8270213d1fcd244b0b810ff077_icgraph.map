@@ -1,0 +1,4 @@
+<map id="counterTick" name="counterTick">
+<area shape="rect" id="node1" title="Increases the current count or resets when counter_max is hit." alt="" coords="104,5,193,31"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Application entry point." alt="" coords="5,5,56,31"/>
+</map>

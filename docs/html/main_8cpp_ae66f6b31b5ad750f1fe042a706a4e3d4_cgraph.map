@@ -1,0 +1,13 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Application entry point." alt="" coords="5,104,56,129"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a35964baf83704a1d649c88760d4bec2f" title="Setup for app." alt="" coords="166,29,213,55"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077" title="Increases the current count or resets when counter_max is hit." alt="" coords="145,79,234,104"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a803f4867273f07b9850efab3d3724678" title="Displays temperature (celsius) &amp; humidity (humidity)" alt="" coords="127,128,252,153"/>
+<area shape="rect" id="node8" href="$main_8cpp.html#ad7b80de2576645ecbd4e4b1fd7cd85f7" title="Displays current earthquake status." alt="" coords="104,177,275,203"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#afaa5f070126ac5184a648b484e7cf276" title="Clears the main display &amp; sets default colors." alt="" coords="349,5,443,31"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a6b71ffd718e2af00cebeb05560b44be7" title=" " alt="" coords="372,55,419,80"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#aed9f24d13d4a677eaac9376a6f067fc7" title=" " alt="" coords="354,128,437,153"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a1f8d13541fb77fc8eab6ff0c44209851" title="Detects earth quakes. Sets the red led to ON/OFF." alt="" coords="323,177,468,203"/>
+<area shape="rect" id="node10" href="$main_8cpp.html#a8fe2756bc173a5774f2a21592b8ab72a" title=" " alt="" coords="549,152,596,177"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#aaa069d2c3ac83726fd36418c31438dec" title=" " alt="" coords="516,201,630,227"/>
+</map>
