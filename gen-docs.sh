@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-DOXYFILE=$(readlink -f Doxyfile)
+DIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+DOXYFILE="$DIR/Doxyfile"
 
 rm -rf ./docs/html
 

@@ -1,0 +1,8 @@
+<map id="usbCom" name="usbCom">
+<area shape="rect" id="node1" title=" " alt="" coords="488,75,559,100"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a758fa7cb3c572ae21c3f43fefe205fd5" title="Resets the counter." alt="" coords="239,5,337,31"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6" title="Set the View object." alt="" coords="254,87,322,112"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a00d66a08391b1245e702d9c5c5ca3916" title="Switches the current view." alt="" coords="104,125,191,151"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#add51cce3314459d9a8c556847efd0fd6" title=" " alt="" coords="385,100,440,125"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Application entry point." alt="" coords="5,75,56,100"/>
+</map>
