@@ -55,11 +55,9 @@ int is_earth_quake()
 
 void run_temp_humid()
 {
-
   int error = 0;
   float h = 0.0f, c = 0.0f;
 
-  //wait(2.0f);
   error = sensor.readData();
   if (0 == error)
   {
@@ -104,7 +102,7 @@ void run_counter()
   }
 
   char display_int[32];
-  sprintf(display_int, "Count: %u", counter_current);
+  sprintf(display_int, "Count: %04u", counter_current);
 
   lcd.DisplayStringAt(0, LINE(5), (uint8_t *)display_int, CENTER_MODE);
 }
