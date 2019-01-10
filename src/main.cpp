@@ -13,17 +13,30 @@ AnalogIn soundSensor(A2);
 
 Serial usbCom(USBTX, USBRX);
 
+uint32_t LCD_BACKGROUND = 0xFF011301;
+uint32_t LCD_TEXT_BACKGROUND = 0xFF1D3D1C;
+uint32_t LCD_TEXT_COLOR = 0xFF3DF67C;
+
+void clearDisplay()
+{
+  lcd.Clear(LCD_BACKGROUND);
+  lcd.SetBackColor(LCD_TEXT_BACKGROUND);
+  lcd.SetTextColor(LCD_TEXT_COLOR);
+}
+
 void boot()
 {
   led1 = 1;
   lcd.Init();
+
+  clearDisplay();
 
   lcd.DisplayStringAt(0, LINE(1), (uint8_t *)"Booting Hercules...", CENTER_MODE);
   lcd.DisplayStringAt(0, LINE(4), (uint8_t *)"Please wait", CENTER_MODE);
 
   wait(1);
 
-  lcd.Clear(LCD_COLOR_DARKCYAN);
+  clearDisplay();
 }
 
 int is_earth_quake()
@@ -56,7 +69,7 @@ void run_temp_humid()
     char temp[32];
     char humid[32];
 
-    sprintf(temp, "Temperature: %d c", (int)c);
+    sprintf(temp, "Temperature: %d C", (int)c);
     sprintf(humid, "Humidity: %d %%", (int)h);
 
     lcd.DisplayStringAt(0, LINE(7), (uint8_t *)temp, CENTER_MODE);
