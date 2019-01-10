@@ -88,7 +88,7 @@ int main()
 {
   boot();
 
-  while (1)
+  while (true)
   {
     run_temp_humid();
     run_counter();
