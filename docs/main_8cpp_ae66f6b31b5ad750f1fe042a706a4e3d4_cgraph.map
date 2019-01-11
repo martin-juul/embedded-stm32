@@ -12,7 +12,7 @@
 <area shape="rect" id="node7" href="$main_8cpp.html#a852db55a060a56ad4faa2ac9230db7b8" title=" " alt="" coords="570,365,641,390"/>
 <area shape="rect" id="node10" href="$main_8cpp.html#ac6a4826363dab38339c0c9c3c8eaf823" title="View 1 logic." alt="" coords="416,265,472,290"/>
 <area shape="rect" id="node18" href="$main_8cpp.html#a301095a2d01e5b5fc1969e5ef7dbda74" title="View 2 logic." alt="" coords="416,163,472,189"/>
-<area shape="rect" id="node19" href="$main_8cpp.html#add51cce3314459d9a8c556847efd0fd6" title=" " alt="" coords="416,114,472,139"/>
+<area shape="rect" id="node19" href="$main_8cpp.html#add51cce3314459d9a8c556847efd0fd6" title="View 3 logic." alt="" coords="416,114,472,139"/>
 <area shape="rect" id="node11" href="$main_8cpp.html#a803f4867273f07b9850efab3d3724678" title="Displays temperature (celsius) &amp; humidity (humidity)" alt="" coords="543,215,668,241"/>
 <area shape="rect" id="node13" href="$main_8cpp.html#ad7b80de2576645ecbd4e4b1fd7cd85f7" title="Displays current earthquake status." alt="" coords="520,265,692,290"/>
 <area shape="rect" id="node17" href="$main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077" title="Increases the current count or resets when counter_max is hit." alt="" coords="561,314,651,339"/>

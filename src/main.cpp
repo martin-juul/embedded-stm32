@@ -194,6 +194,10 @@ void view2()
   }
 }
 
+/**
+ * @brief View 3 logic
+ * 
+ */
 void view3()
 {
   status = ts.Init(lcd.GetXSize(), lcd.GetYSize());
