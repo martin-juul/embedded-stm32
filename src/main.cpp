@@ -181,7 +181,7 @@ void view1()
 void view2()
 {
   char i2c_clock[32];
-  sprintf(i2c_clock, "I2C Clock: %d Hz", ((int)I2C_SPEED / 1000));
+  sprintf(i2c_clock, "I2C Clock: %d KHz", ((int)I2C_SPEED / 1000));
   lcd.DisplayStringAt(0, LINE(3), (uint8_t *)i2c_clock, CENTER_MODE);
 
   if (BSP_SD_IsDetected())
