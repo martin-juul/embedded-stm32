@@ -13,6 +13,7 @@ Features
 + Counter
 + Temp sensor reading
 + Humidity reading
++ Dew point
 + Earthquake detection
 
 #### Counter
@@ -22,6 +23,10 @@ The counter can be reset using the on-board USER_B1 button (the blue one).
 #### Temperature & Humidity
 
 These readings arrives from the Grove DHT sensor. It is read faster than the sensor can keep up with, therefore it handles errors - so it does not disturb the display.
+
+#### Dew point
+
+The dew point is the temperature to which air must be cooled to become saturated with water vapour. When further cooled, the airborne water vapor will condense to form liquid water. When air cools to its dew point through contact with a surface that is colder than the air, water will condense on the surface. - Wikipedia
 
 #### Earthquake detection
 
