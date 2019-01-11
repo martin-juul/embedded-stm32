@@ -66,12 +66,54 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a href="https://travis-ci.org/martin-juul/embedded-stm32"><img src="https://travis-ci.org/martin-juul/embedded-stm32.svg?branch=master" alt="Build Status" class="inline"/>
-</a> </p>
+</a> | <a href="https://martin-juul.github.io/embedded-stm32/">Docs</a></p>
+<h2>Overview</h2>
+<p>The interface is currently divided into 3 views.</p>
+<h3>Home</h3>
+<p>Features</p>
+<ul>
+<li>Counter</li>
+<li>Temp sensor reading</li>
+<li>Humidity reading</li>
+<li>Earthquake detection</li>
+</ul>
+<h4>Counter</h4>
+<p>The counter can be reset using the on-board USER_B1 button (the blue one).</p>
+<h4>Temperature &amp; Humidity</h4>
+<p>These readings arrives from the Grove DHT sensor. It is read faster than the sensor can keep up with, therefore it handles errors - so it does not disturb the display.</p>
+<h4>Earthquake detection</h4>
+<p>This works via the Piezo Vibration Sensor. The amount of hz needed for earthquake detection is only for show, and not an actual real-life scale. On detection <code>Is Earthquake</code> displays 1, and the external <code>LED SOCKET KIT</code> with a red LED lights up.</p>
+<h3>System</h3>
+<p>Features</p>
+<ul>
+<li>I2C Clock speed display</li>
+<li>SD Card detection display</li>
+</ul>
+<p>This view shows the I2C clock speed, converted to kHZ.</p>
+<p>The SD card state is read from <code>BSP_SD_IsDetected()</code></p>
+<h3>Radio Player</h3>
+<p>This was meant to play tones aligning with the songs <code>Danger Zone</code> &amp; <code>The Final Countdown</code>. The buzzer was annoyingly loud, and needs a resistor for being bearable.</p>
+<h2>Roadmap</h2>
+<ul>
+<li>Split logic into its own seperate classes. Preferably with a ViewComposer, that abstracts the LCD and Touch logic away.</li>
+<li>SD Card Filesystem</li>
+<li>Sound output from onboard <code>CN10 OUT</code></li>
+<li>MP3 Player</li>
+<li>Ethernet with IPv4 &amp; DHCP Client registration</li>
+<li>HTTP Webserver, serving a page for controlling the MP3 player.</li>
+</ul>
+<h2>Libraries used in project</h2>
+<ul>
+<li>BSP_DISCO_F746NG@df2ea349c3</li>
+<li>LCD_DISCO_F746NG@d44525b1de</li>
+<li>DHT_ID2256</li>
+<li>TS_DISCO_746NG_ID2804 </li>
+</ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2019 21:18:39 for Hercules by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 08:31:53 for Hercules by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
