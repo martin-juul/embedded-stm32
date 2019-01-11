@@ -380,10 +380,10 @@ int main()
         y = TS_State.touchY[idx];
 
         int y_hitbox_min = 240 - 10;
-        int y_hitbox_max = 240 + 10;
+        int y_hitbox_max = 240 + 50;
 
         int x_hitbox_min = 410 - 10;
-        int x_hitbox_max = 410 + 10;
+        int x_hitbox_max = 410 + 50;
 
         if ((y >= y_hitbox_min && y <= y_hitbox_max) && (x >= x_hitbox_min && x <= x_hitbox_max))
         {

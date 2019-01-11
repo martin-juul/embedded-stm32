@@ -39,6 +39,7 @@ install:
 
 script:
     - platformio run
+    - ls -lah
 
 
 #
