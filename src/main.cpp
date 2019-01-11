@@ -353,6 +353,29 @@ void boot()
   clearDisplay();
 }
 
+void displayNavbar()
+{
+  lcd.DrawHLine(10, 10, 460);
+  lcd.DrawHLine(10, 20, 460);
+
+  lcd.SetFont(&Font8);
+
+  lcd.DisplayStringAt(10, 12, (uint8_t *)"Hercules v1.0", LEFT_MODE);
+
+  if (BSP_SD_IsDetected())
+  {
+    lcd.SetBackColor(LCD_TEXT_COLOR);
+    lcd.SetTextColor(LCD_TEXT_BACKGROUND);
+  }
+
+  lcd.DisplayStringAt(450, 12, (uint8_t *)" SD ", LEFT_MODE);
+
+  lcd.SetBackColor(LCD_TEXT_BACKGROUND);
+  lcd.SetTextColor(LCD_TEXT_COLOR);
+
+  lcd.SetFont(&Font16);
+}
+
 /**
  * @brief Application entry point
  * 
@@ -400,12 +423,7 @@ int main()
         char displayView[32];
         sprintf(displayView, "View: %d", currentView);
 
-        lcd.DrawHLine(10, 10, 460);
-        lcd.SetFont(&Font8);
-        lcd.DisplayStringAt(10, 12, (uint8_t *)"Hercules v1.0", LEFT_MODE);
-        lcd.DrawHLine(10, 20, 460);
-
-        lcd.SetFont(&Font16);
+        displayNavbar();
 
         lcd.DisplayStringAt(10, 240, (uint8_t *)displayView, LEFT_MODE);
         lcd.DisplayStringAt(410, 240, (uint8_t *)"Next", LEFT_MODE);
