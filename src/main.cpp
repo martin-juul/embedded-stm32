@@ -32,6 +32,15 @@ AnalogIn soundSensor(A2);
 InterruptIn viewBtn(D3);
 InterruptIn resetCounterBtn(BUTTON1);
 
+// Touch Screen
+TS_StateTypeDef TS_State;
+uint16_t x, y;
+uint8_t text[30];
+uint8_t status;
+uint8_t idx;
+uint8_t cleared = 0;
+uint8_t prev_nb_touches = 0;
+
 // Counter
 int counter_max = 9999;
 int counter_current = 0;
@@ -175,16 +184,15 @@ void view2()
   sprintf(i2c_clock, "I2C Clock: %d Hz", ((int)I2C_SPEED / 1000));
   lcd.DisplayStringAt(0, LINE(3), (uint8_t *)i2c_clock, CENTER_MODE);
 
-  lcd.DisplayStringAt(0, LINE(7), (uint8_t *)"SD Card detected", CENTER_MODE);
+  if (BSP_SD_IsDetected())
+  {
+    lcd.DisplayStringAt(0, LINE(7), (uint8_t *)"SD Card detected", CENTER_MODE);
+  }
+  else
+  {
+    lcd.DisplayStringAt(0, LINE(7), (uint8_t *)"SD Card not detected", CENTER_MODE);
+  }
 }
-
-TS_StateTypeDef TS_State;
-uint16_t x, y;
-uint8_t text[30];
-uint8_t status;
-uint8_t idx;
-uint8_t cleared = 0;
-uint8_t prev_nb_touches = 0;
 
 void view3()
 {
