@@ -237,7 +237,10 @@ void view3()
       if (y >= y_hitbox_min && y <= y_hitbox_max)
       {
         buzzer = 1;
+
         wait(.5);
+
+        buzzer = 0;
       }
     }
   }
@@ -245,7 +248,6 @@ void view3()
   {
     if (!cleared)
     {
-      clearDisplay();
       lcd.DisplayStringAt(0, LINE(0), (uint8_t *)&text, LEFT_MODE);
       cleared = 1;
     }
