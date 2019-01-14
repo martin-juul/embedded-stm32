@@ -1,8 +1,7 @@
 <map id="clearDisplay" name="clearDisplay">
-<area shape="rect" id="node1" title="Clears the main display &amp; sets default colors." alt="" coords="458,81,552,107"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#a35964baf83704a1d649c88760d4bec2f" title="Setup for app." alt="" coords="249,5,296,31"/>
+<area shape="rect" id="node1" title="Clears the main display &amp; sets default colors." alt="" coords="354,56,448,81"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a35964baf83704a1d649c88760d4bec2f" title="Setup for app." alt="" coords="123,5,171,31"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Application entry point." alt="" coords="5,81,56,107"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6" title="Set the View object." alt="" coords="239,132,306,157"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#add51cce3314459d9a8c556847efd0fd6" title="View 3 logic." alt="" coords="354,157,410,183"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6" title="Set the View object." alt="" coords="239,107,306,132"/>
 <area shape="rect" id="node5" href="$main_8cpp.html#a00d66a08391b1245e702d9c5c5ca3916" title="Switches the current view." alt="" coords="104,157,191,183"/>
 </map>

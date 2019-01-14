@@ -2,10 +2,10 @@
 
 DIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-DOXYFILE="$DIR/Doxyfile"
+DOXYFILE="${DIR}/Doxyfile"
 
 rm -rf ./docs/html
 
-doxygen $DOXYFILE
+doxygen "${DOXYFILE}"
 
-git add .
+#git add .
