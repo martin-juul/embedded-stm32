@@ -1,11 +1,23 @@
 #!/usr/bin/env bash
 
-DIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+set -e
 
+DIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DOXYFILE="${DIR}/Doxyfile"
 
-rm -rf ./docs/html
+echo -e "Removing existing generated files if any."
 
+find "${DIR}/docs" ! -name '_config.yml' -type f -exec rm -f {} +
+rm -rf "${DIR}/docs/search"
+
+echo -e "Generating docs"
 doxygen "${DOXYFILE}"
 
-#git add .
+echo -e "Overwriting docs directory"
+(cd "${DIR}/docs/html/" && mv ./* ../)
+
+echo -e "Removing artifacts"
+rm -rf "${DIR}/docs/html"
+
+echo -e "Adding files to git"
+git add .

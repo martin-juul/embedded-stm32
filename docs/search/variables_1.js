@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['fallout',['fallout',['../fallout_8h.html#a15136bc10ac07b88bbdb40399f9d9166',1,'fallout.h']]],
-  ['fallout_5flen',['fallout_len',['../fallout_8h.html#a27c76a5bd0608ac6b11f79a65caec1ae',1,'fallout.h']]]
+  ['actions',['actions',['../class_abstract_view.html#aed79516d7331f28b70e1c3d11616d9f0',1,'AbstractView']]]
 ];

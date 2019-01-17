@@ -1,10 +1,4 @@
 <map id="view1" name="view1">
-<area shape="rect" id="node1" title="View 1 logic." alt="" coords="5,55,61,80"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077" title="Increases the current count or resets when counter_max is hit." alt="" coords="150,5,240,31"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a803f4867273f07b9850efab3d3724678" title="Displays temperature (celsius) &amp; humidity (humidity)" alt="" coords="132,55,257,80"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#ad7b80de2576645ecbd4e4b1fd7cd85f7" title="Displays current earthquake status." alt="" coords="109,104,281,129"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#aed9f24d13d4a677eaac9376a6f067fc7" title=" " alt="" coords="360,55,442,80"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#a1f8d13541fb77fc8eab6ff0c44209851" title="Detects earth quakes. Sets the red led to ON/OFF." alt="" coords="329,104,473,129"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#a8fe2756bc173a5774f2a21592b8ab72a" title=" " alt="" coords="555,79,601,104"/>
-<area shape="rect" id="node8" href="$main_8cpp.html#aaa069d2c3ac83726fd36418c31438dec" title=" " alt="" coords="521,128,635,153"/>
+<area shape="rect" id="node1" title="View 1 logic." alt="" coords="5,5,61,31"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077" title="Increases the current count or resets when counter_max is hit." alt="" coords="109,5,199,31"/>
 </map>

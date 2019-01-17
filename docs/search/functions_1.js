@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['cleardisplay',['clearDisplay',['../main_8cpp.html#afaa5f070126ac5184a648b484e7cf276',1,'main.cpp']]],
-  ['countertick',['counterTick',['../main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077',1,'main.cpp']]]
+  ['boot',['boot',['../main_8cpp.html#a35964baf83704a1d649c88760d4bec2f',1,'main.cpp']]],
+  ['buildnav',['BuildNav',['../_g_u_i___manager_8cpp.html#a60a6d571fbd5a269e9b158cff1394ba6',1,'GUI_Manager.cpp']]],
+  ['buzzer',['buzzer',['../main_8cpp.html#a95d614d7953632735a93de307afdf342',1,'main.cpp']]]
 ];
