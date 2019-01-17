@@ -1,9 +1,34 @@
 #include <mbed.h>
 #include "hw/led.h"
 
-// Private
+// Private vars
 DigitalOut led1(ONBOARD_LED);
 DigitalOut led2(EXTERNAL_LED);
+
+// Private methods
+
+/**
+ * @brief Sets Pin state
+ * 
+ * @param Pin 
+ * @param OnOff 
+ */
+void SwitchPin(PinName Pin, bool OnOff)
+{
+    switch (Pin)
+    {
+    case ONBOARD_LED:
+        led1 = OnOff;
+        return;
+    case EXTERNAL_LED:
+        led2 = OnOff;
+        return;
+    default:
+        return;
+    }
+};
+
+// Public methods
 
 /**
  * @brief LED Constructor
@@ -29,25 +54,4 @@ void On(PinName Pin)
 void Off(PinName Pin)
 {
     SwitchPin(Pin, 0);
-};
-
-/**
- * @brief Sets Pin state
- * 
- * @param Pin 
- * @param OnOff 
- */
-void SwitchPin(PinName Pin, bool OnOff)
-{
-    switch (Pin)
-    {
-    case ONBOARD_LED:
-        led1 = OnOff;
-        return;
-    case EXTERNAL_LED:
-        led2 = OnOff;
-        return;
-    default:
-        return;
-    }
 };
