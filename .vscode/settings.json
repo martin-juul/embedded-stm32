@@ -1,6 +1,6 @@
 {
   "terminal.integrated.env.osx": {
-    "PATH": "/Users/martin/.platformio/penv/bin:/Users/martin/.platformio/penv:/Users/martin/.rvm/gems/jruby-9.2.5.0/bin:/Users/martin/.rvm/gems/jruby-9.2.5.0@global/bin:/Users/martin/.rvm/rubies/jruby-9.2.5.0/bin:/Users/martin/.nvm/versions/node/v10.14.2/bin:/usr/local/sbin:/Users/martin/.composer/vendor/bin:/usr/local/sbin:/tools:/platform-tools:/usr/local/opt/libpq/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/MacGPG2/bin:/opt/puppetlabs/bin:/usr/local/share/dotnet:/opt/puppetlabs/pdk/bin:~/.dotnet/tools:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/Users/martin/.composer/vendor/bin:/Users/martin/.rvm/bin",
+    "PATH": "/Users/martin/.platformio/penv/bin:/Users/martin/.platformio/penv:/Users/martin/.nvm/versions/node/v10.15.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/opt/puppetlabs/bin:/usr/local/share/dotnet:/opt/puppetlabs/pdk/bin:~/.dotnet/tools",
     "PLATFORMIO_CALLER": "vscode"
   },
   "files.associations": {
