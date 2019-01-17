@@ -1,7 +1,6 @@
 #include <mbed.h>
 #include "LCD_DISCO_F746NG.h"
 #include "TS_DISCO_F746NG.h"
-#include "DHT.h"
 #include "display.h"
 #include <iostream>
 #include "fallout.h"
@@ -25,7 +24,6 @@ DigitalOut led2(D2);
 DigitalOut buzzer(D4);
 
 // External sensors
-DHT dhtSensor(A0, SEN51035P);
 AnalogIn vibrationSensor(A1);
 AnalogIn soundSensor(A2);
 
@@ -111,36 +109,6 @@ int earthQuakeDetected()
 }
 
 /**
- * @brief Displays temperature (celsius) & humidity (humidity)
- * 
- */
-void displayCurrentHT()
-{
-  int error = 0;
-  float h = 0.0f, c = 0.0f, d = 0.0f;
-
-  error = dhtSensor.readData();
-  if (0 == error)
-  {
-    c = dhtSensor.ReadTemperature(CELCIUS);
-    h = dhtSensor.ReadHumidity();
-    d = dhtSensor.CalcdewPointFast(c, h);
-
-    char temp[32];
-    char humid[32];
-    char dew_point[32];
-
-    sprintf(temp, "Temperature: %d C", (int)c);
-    sprintf(humid, "Humidity: %d %%", (int)h);
-    sprintf(dew_point, "Dew Point: %d C", (int)d);
-
-    lcd.DisplayStringAt(0, LINE(6), (uint8_t *)temp, CENTER_MODE);
-    lcd.DisplayStringAt(0, LINE(7), (uint8_t *)humid, CENTER_MODE);
-    lcd.DisplayStringAt(0, LINE(8), (uint8_t *)dew_point, CENTER_MODE);
-  }
-}
-
-/**
  * @brief Displays current earthquake status
  * 
  */
@@ -173,7 +141,6 @@ int viewCount = 3;
  */
 void view1()
 {
-  displayCurrentHT();
   displayEarthQuakeStatus();
   counterTick();
 }

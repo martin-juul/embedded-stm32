@@ -10,11 +10,11 @@
 DHT dhtSensor(DHT_PIN, DHT_TYPE);
 Thread dhtThread;
 bool dhtThreadRunning = false;
-std::vector<char[32]> dhtResult;
+std::vector< u_int8_t > dhtResult;
 
-void dhtTaskContext(std::vector<char> *dhtResult)
+void dhtTaskContext(std::vector< u_int8_t > *dhtResult)
 {
-    std::vector<char> result;
+    std::vector< u_int8_t > result;
 
     int error = 0;
     float h = 0.0f, c = 0.0f, d = 0.0f;
@@ -38,9 +38,9 @@ void dhtTaskContext(std::vector<char> *dhtResult)
             sprintf(humid, "Humidity: %d %%", (int)h);
             sprintf(dew_point, "Dew Point: %d C", (int)d);
 
-            result.push_back(&temp);
-            result.push_back(&humid);
-            result.push_back(&dew_point);
+            result.push_back((u_int8_t &)temp);
+            result.push_back((u_int8_t &)humid);
+            result.push_back((u_int8_t &)dew_point);
 
             *dhtResult = result;
         }
@@ -60,7 +60,7 @@ void startDhtTask()
     /* osStatus status = */ dhtThread.start(dhtTask);
 }
 
-std::vector<char> getDHT()
+std::vector< u_int8_t > getDHT()
 {
     return dhtResult;
 }

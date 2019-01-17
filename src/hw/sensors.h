@@ -10,7 +10,7 @@ class Sensors
     private:
 
     public:
-        std::vector<char> getDHT();
+        std::vector< u_int8_t > getDHT();
 
         void stopDht();
 };
