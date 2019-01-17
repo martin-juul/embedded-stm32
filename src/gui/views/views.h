@@ -10,5 +10,15 @@ class AbstractView
         std::vector< GuiAction > actions;
 
     public:
+        void Tick();
 
 };
+
+class HomeView : AbstractView
+{};
+
+class MusicView : AbstractView
+{};
+
+class SystemView : AbstractView
+{};
