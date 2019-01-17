@@ -15,11 +15,6 @@ LCD_DISCO_F746NG lcd;
 // LCD Touch port
 TS_DISCO_F746NG ts;
 
-// On-board LED
-DigitalOut led1(LED1);
-// External LED (red)
-DigitalOut led2(D2);
-
 // External buzzer
 DigitalOut buzzer(D4);
 
@@ -90,32 +85,13 @@ void clearDisplay()
 // Sensors
 
 /**
- * @brief Detects earth quakes. Sets the red led to ON/OFF.
- * 
- * @return int 
- */
-int earthQuakeDetected()
-{
-  if (vibrationSensor.read() > 0.06)
-  {
-    led2 = 1;
-
-    return 1;
-  }
-
-  led2 = 0;
-
-  return 0;
-}
-
-/**
  * @brief Displays current earthquake status
  * 
  */
 void displayEarthQuakeStatus()
 {
   char earth_quake[32];
-  sprintf(earth_quake, "Is Earthquake: %d", earthQuakeDetected());
+  // sprintf(earth_quake, "Is Earthquake: %d", earthQuakeDetected());
 
   lcd.DisplayStringAt(0, LINE(10), (uint8_t *)earth_quake, CENTER_MODE);
 }
@@ -141,7 +117,6 @@ int viewCount = 3;
  */
 void view1()
 {
-  displayEarthQuakeStatus();
   counterTick();
 }
 
@@ -295,7 +270,6 @@ void switchView()
  */
 void boot()
 {
-  led1 = 1;
   lcd.Init();
   buzzer = 0;
 
