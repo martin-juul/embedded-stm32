@@ -13,19 +13,23 @@ DigitalOut led2(EXTERNAL_LED);
  * @param Pin 
  * @param OnOff 
  */
-void SwitchPin(PinName Pin, bool OnOff)
+int SwitchPin(PinName Pin, bool OnOff)
 {
     switch (Pin)
     {
     case ONBOARD_LED:
         led1 = OnOff;
-        return;
+
+        return 0;
     case EXTERNAL_LED:
         led2 = OnOff;
-        return;
+
+        return 0;
     default:
-        return;
+        return 1;
     }
+
+    return 1;
 };
 
 // Public methods
@@ -37,21 +41,23 @@ void SwitchPin(PinName Pin, bool OnOff)
 void LED(){};
 
 /**
- * @brief Set Pin to On
+ * @brief Set Pin to On, returns 0 when successful - 1 when not
  * 
  * @param Pin 
+ * @return int 
  */
-void On(PinName Pin)
+int On(PinName Pin)
 {
-    SwitchPin(Pin, 1);
+    return SwitchPin(Pin, 1);
 };
 
 /**
- * @brief Set Pin to Off
+ * @brief Set Pin to Off, returns 0 when successful - 1 when not
  * 
  * @param Pin 
+ * @return int 
  */
-void Off(PinName Pin)
+int Off(PinName Pin)
 {
-    SwitchPin(Pin, 0);
+    return SwitchPin(Pin, 0);
 };
