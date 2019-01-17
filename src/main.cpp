@@ -19,7 +19,6 @@ TS_DISCO_F746NG ts;
 DigitalOut buzzer(D4);
 
 // External sensors
-AnalogIn vibrationSensor(A1);
 AnalogIn soundSensor(A2);
 
 InterruptIn viewBtn(D3);
