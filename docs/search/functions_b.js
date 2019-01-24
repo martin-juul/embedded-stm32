@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['setview',['setView',['../main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6',1,'main.cpp']]],
-  ['soundsensor',['soundSensor',['../main_8cpp.html#a7cdaada72d0158a242f811b260ff76ab',1,'main.cpp']]],
-  ['startdhttask',['startDhtTask',['../sensors_8cpp.html#af9b01fc0e2c922418b32a4c494ff9474',1,'sensors.cpp']]],
-  ['stopdht',['stopDht',['../class_sensors.html#a5f7d36ed280ac2dd31cdc0e1539469ab',1,'Sensors::stopDht()'],['../sensors_8cpp.html#a68fd5ad60219060096ee24092f539362',1,'stopDht():&#160;sensors.cpp']]],
-  ['string',['String',['../class_display.html#a86dbac1f487573bc93a6684e31c4c094',1,'Display']]],
-  ['switchpin',['SwitchPin',['../class_l_e_d.html#a2b8843a1dcc240316a34ca2bda2b2473',1,'LED::SwitchPin()'],['../led_8cpp.html#a0e647857d9f3fea6a0284668280efd11',1,'SwitchPin():&#160;led.cpp']]],
-  ['switchview',['switchView',['../main_8cpp.html#a00d66a08391b1245e702d9c5c5ca3916',1,'main.cpp']]]
+  ['vibrationsensor',['vibrationSensor',['../main_8cpp.html#aaa069d2c3ac83726fd36418c31438dec',1,'main.cpp']]],
+  ['view1',['view1',['../main_8cpp.html#ac6a4826363dab38339c0c9c3c8eaf823',1,'main.cpp']]],
+  ['view2',['view2',['../main_8cpp.html#a301095a2d01e5b5fc1969e5ef7dbda74',1,'main.cpp']]],
+  ['view3',['view3',['../main_8cpp.html#add51cce3314459d9a8c556847efd0fd6',1,'main.cpp']]],
+  ['viewbtn',['viewBtn',['../main_8cpp.html#a1f0610f446d2999cb9ada8775d02aa45',1,'main.cpp']]]
 ];

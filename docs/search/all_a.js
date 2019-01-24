@@ -1,22 +1,7 @@
 var searchData=
 [
-  ['label',['label',['../struct_app_nav_item.html#a1c7f4ed8e2430ab59aea034ca1029c5a',1,'AppNavItem::label()'],['../struct_g_u_i___button.html#aefa681bdbe76ae7372a459fa4a03af1e',1,'GUI_Button::label()']]],
-  ['lcd',['lcd',['../main_8cpp.html#a3c1f2da0f141b407b8b1430ee16aa7d1',1,'main.cpp']]],
-  ['lcd_5fbackground',['LCD_BACKGROUND',['../display_8h.html#a31cad21db1b52252230378b6a3b18f49',1,'display.h']]],
-  ['lcd_5fline_5f1',['LCD_LINE_1',['../display_8h.html#a1e69a485cafa5d569afca517e256f7f0',1,'display.h']]],
-  ['lcd_5fline_5f2',['LCD_LINE_2',['../display_8h.html#a430fd6df4fea8dd031339d0956c9e7a6',1,'display.h']]],
-  ['lcd_5fline_5f3',['LCD_LINE_3',['../display_8h.html#a055345000b45995b5fb8549706b5c4a1',1,'display.h']]],
-  ['lcd_5fline_5f4',['LCD_LINE_4',['../display_8h.html#ae0dd0b3ef5f2f2c2a6ddc75ace00aa91',1,'display.h']]],
-  ['lcd_5fline_5f5',['LCD_LINE_5',['../display_8h.html#a05b9076c2bfda9ac439972940c252b37',1,'display.h']]],
-  ['lcd_5fline_5fcounter',['LCD_LINE_COUNTER',['../display_8h.html#a2b695a3cc6ebfad91af197c26f1fe3d1',1,'display.h']]],
-  ['lcd_5fline_5fearth_5fquake',['LCD_LINE_EARTH_QUAKE',['../display_8h.html#a769dcedf0acfce21259719fed90166f4',1,'display.h']]],
-  ['lcd_5fline_5fhumid',['LCD_LINE_HUMID',['../display_8h.html#aef90c499a40e5dc8ebbabf76a8df96fe',1,'display.h']]],
-  ['lcd_5fline_5ftemp',['LCD_LINE_TEMP',['../display_8h.html#af99bf7027d4917ea333e0e71c102cb52',1,'display.h']]],
-  ['lcd_5ftext_5fbackground',['LCD_TEXT_BACKGROUND',['../display_8h.html#ab5660df015f9a92f0b2b078a5977f258',1,'display.h']]],
-  ['lcd_5ftext_5fcolor',['LCD_TEXT_COLOR',['../display_8h.html#a02c2094379f2719b7655ad83145641ae',1,'display.h']]],
-  ['led',['LED',['../class_l_e_d.html',1,'LED'],['../class_l_e_d.html#a979c15b97f7c7bc41e683e3f5ffa97e5',1,'LED::LED()'],['../led_8cpp.html#a2796e7e3fb091f2299f4f369892cedfa',1,'LED():&#160;led.cpp']]],
-  ['led_2ecpp',['led.cpp',['../led_8cpp.html',1,'']]],
-  ['led_2eh',['led.h',['../led_8h.html',1,'']]],
-  ['led1',['led1',['../class_l_e_d.html#a2ea0c0bf81a554e21d906a7b1b49ea62',1,'LED::led1()'],['../led_8cpp.html#ab29754a3401a8385890e5230b98d1bcf',1,'led1():&#160;led.cpp']]],
-  ['led2',['led2',['../class_l_e_d.html#ac2297091da2acf4e82a9007e228f1ac4',1,'LED::led2()'],['../led_8cpp.html#ab07ba0b689ff119d2939f748f2dc3572',1,'led2():&#160;led.cpp']]]
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['resetcounter',['resetCounter',['../main_8cpp.html#a758fa7cb3c572ae21c3f43fefe205fd5',1,'main.cpp']]],
+  ['resetcounterbtn',['resetCounterBtn',['../main_8cpp.html#a7a0ec1f1c5c7d5c80a55d3e6a35a89c7',1,'main.cpp']]],
+  ['roomnumber',['roomNumber',['../main_8cpp.html#a31f0bf01ed14cddd1395bbde87e35223',1,'main.cpp']]]
 ];

@@ -1,0 +1,24 @@
+<map id="gui_thread" name="gui_thread">
+<area shape="rect" id="node1" title="Gui Thread." alt="" coords="5,249,90,275"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#afaa5f070126ac5184a648b484e7cf276" title="Clears the main display &amp; sets default colors." alt="" coords="389,124,483,149"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ad8565aaf546f0a345b7633334c9dee61" title=" " alt="" coords="389,375,483,400"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6" title="Set the View object." alt="" coords="273,224,341,249"/>
+<area shape="rect" id="node22" href="$main_8cpp.html#a00d66a08391b1245e702d9c5c5ca3916" title="Switches the current view." alt="" coords="138,275,225,300"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#adf9790348cb7aa4938c642e76eaa2d55" title=" " alt="" coords="580,325,654,351"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ad5cc3abe0aaece272305f54486f8ddc6" title=" " alt="" coords="573,375,662,400"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a852db55a060a56ad4faa2ac9230db7b8" title=" " alt="" coords="582,276,653,301"/>
+<area shape="rect" id="node8" href="$main_8cpp.html#ac6a4826363dab38339c0c9c3c8eaf823" title="View 1 logic." alt="" coords="408,173,464,199"/>
+<area shape="rect" id="node21" href="$main_8cpp.html#a301095a2d01e5b5fc1969e5ef7dbda74" title="View 2 logic." alt="" coords="408,325,464,351"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a803f4867273f07b9850efab3d3724678" title="Displays temperature &amp; humidity (humidity)" alt="" coords="555,227,680,252"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#ad7b80de2576645ecbd4e4b1fd7cd85f7" title="Displays current earthquake status." alt="" coords="531,29,703,55"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#ada8fd9a1f3f47fed5a5b3f18c50b0f62" title="Says &quot;godnat&quot; when dark, &quot;goddag&quot; when light." alt="" coords="552,79,682,104"/>
+<area shape="rect" id="node17" href="$main_8cpp.html#a6fd74b8039c9a5d8c8c7e4bf09138f91" title=" " alt="" coords="562,128,673,153"/>
+<area shape="rect" id="node19" href="$main_8cpp.html#a4992911e289e01be2476c1e53cc01df1" title=" " alt="" coords="566,177,668,203"/>
+<area shape="rect" id="node10" href="$main_8cpp.html#aed9f24d13d4a677eaac9376a6f067fc7" title=" " alt="" coords="782,227,864,252"/>
+<area shape="rect" id="node12" href="$main_8cpp.html#a1f8d13541fb77fc8eab6ff0c44209851" title="Detects earth quakes. Sets the red led to ON/OFF." alt="" coords="751,29,895,55"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a8fe2756bc173a5774f2a21592b8ab72a" title=" " alt="" coords="977,5,1024,31"/>
+<area shape="rect" id="node14" href="$main_8cpp.html#aaa069d2c3ac83726fd36418c31438dec" title=" " alt="" coords="943,55,1057,80"/>
+<area shape="rect" id="node16" href="$main_8cpp.html#a56556616b04e9400a50b69bf32d61212" title=" " alt="" coords="779,79,867,104"/>
+<area shape="rect" id="node18" href="$main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077" title="Increases the current count or resets when counter_max is hit." alt="" coords="778,128,868,153"/>
+<area shape="rect" id="node20" href="$main_8cpp.html#a638eb43cf3478798d7a7df992d618534" title=" " alt="" coords="773,177,873,203"/>
+</map>

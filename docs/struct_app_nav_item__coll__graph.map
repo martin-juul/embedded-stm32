@@ -1,8 +1,0 @@
-<map id="AppNavItem" name="AppNavItem">
-<area shape="rect" id="node1" title=" " alt="" coords="27,365,122,391"/>
-<area shape="rect" id="node2" title=" " alt="" coords="117,92,155,117"/>
-<area shape="rect" id="node4" href="$struct_application_window.html" title=" " alt="" coords="136,279,270,304"/>
-<area shape="rect" id="node5" href="$struct_window_item.html" title=" " alt="" coords="225,192,319,217"/>
-<area shape="rect" id="node3" title=" " alt="" coords="231,5,287,31"/>
-<area shape="rect" id="node6" href="$union_window_item_type.html" title=" " alt="" coords="197,92,320,117"/>
-</map>

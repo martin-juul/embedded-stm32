@@ -1,5 +1,0 @@
-<map id="SwitchPin" name="SwitchPin">
-<area shape="rect" id="node1" title="Sets Pin state." alt="" coords="5,31,85,56"/>
-<area shape="rect" id="node2" href="$led_8cpp.html#ab29754a3401a8385890e5230b98d1bcf" title=" " alt="" coords="133,5,180,31"/>
-<area shape="rect" id="node3" href="$led_8cpp.html#ab07ba0b689ff119d2939f748f2dc3572" title=" " alt="" coords="133,55,180,80"/>
-</map>

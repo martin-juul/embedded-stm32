@@ -1,0 +1,5 @@
+<map id="earthQuakeDetected" name="earthQuakeDetected">
+<area shape="rect" id="node1" title="Detects earth quakes. Sets the red led to ON/OFF." alt="" coords="5,31,150,56"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a8fe2756bc173a5774f2a21592b8ab72a" title=" " alt="" coords="231,5,278,31"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#aaa069d2c3ac83726fd36418c31438dec" title=" " alt="" coords="198,55,312,80"/>
+</map>

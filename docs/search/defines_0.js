@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['app_5fnav_5fheight',['APP_NAV_HEIGHT',['../application__nav_8h.html#a89bb19ff82516b989a5e09203d46c399',1,'application_nav.h']]],
-  ['app_5fnav_5fitem_5fcolor_5fbg',['APP_NAV_ITEM_COLOR_BG',['../application__nav_8h.html#a8ea6342cf8bf380a9e95c080a95563d2',1,'application_nav.h']]],
-  ['app_5fnav_5fitem_5fcolor_5ficon',['APP_NAV_ITEM_COLOR_ICON',['../application__nav_8h.html#a83542af7643230ca832a0a27cfa0e20f',1,'application_nav.h']]],
-  ['app_5fnav_5fitem_5fcolor_5flabel',['APP_NAV_ITEM_COLOR_LABEL',['../application__nav_8h.html#ab51487d5fd7a81dec043828b428c6b6f',1,'application_nav.h']]],
-  ['app_5fnav_5fitem_5fcolor_5flabel_5fbg',['APP_NAV_ITEM_COLOR_LABEL_BG',['../application__nav_8h.html#a745c83cffa869d6314e828f76a741ed9',1,'application_nav.h']]],
-  ['app_5fnav_5fitem_5fmargin_5ftop',['APP_NAV_ITEM_MARGIN_TOP',['../application__nav_8h.html#a58851c0a4c93766b0f643aecc6355b22',1,'application_nav.h']]],
-  ['app_5fnav_5fwidth',['APP_NAV_WIDTH',['../application__nav_8h.html#a6b2b08433a21e6b7cba94dde00d02e70',1,'application_nav.h']]]
+  ['lcd_5fbackground',['LCD_BACKGROUND',['../display_8h.html#a31cad21db1b52252230378b6a3b18f49',1,'display.h']]],
+  ['lcd_5fline_5f1',['LCD_LINE_1',['../display_8h.html#a1e69a485cafa5d569afca517e256f7f0',1,'display.h']]],
+  ['lcd_5fline_5f2',['LCD_LINE_2',['../display_8h.html#a430fd6df4fea8dd031339d0956c9e7a6',1,'display.h']]],
+  ['lcd_5fline_5f3',['LCD_LINE_3',['../display_8h.html#a055345000b45995b5fb8549706b5c4a1',1,'display.h']]],
+  ['lcd_5fline_5f4',['LCD_LINE_4',['../display_8h.html#ae0dd0b3ef5f2f2c2a6ddc75ace00aa91',1,'display.h']]],
+  ['lcd_5fline_5f5',['LCD_LINE_5',['../display_8h.html#a05b9076c2bfda9ac439972940c252b37',1,'display.h']]],
+  ['lcd_5fline_5fcounter',['LCD_LINE_COUNTER',['../display_8h.html#a2b695a3cc6ebfad91af197c26f1fe3d1',1,'display.h']]],
+  ['lcd_5fline_5fearth_5fquake',['LCD_LINE_EARTH_QUAKE',['../display_8h.html#a769dcedf0acfce21259719fed90166f4',1,'display.h']]],
+  ['lcd_5fline_5fhumid',['LCD_LINE_HUMID',['../display_8h.html#aef90c499a40e5dc8ebbabf76a8df96fe',1,'display.h']]],
+  ['lcd_5fline_5ftemp',['LCD_LINE_TEMP',['../display_8h.html#af99bf7027d4917ea333e0e71c102cb52',1,'display.h']]],
+  ['lcd_5ftext_5fbackground',['LCD_TEXT_BACKGROUND',['../display_8h.html#ab5660df015f9a92f0b2b078a5977f258',1,'display.h']]],
+  ['lcd_5ftext_5fcolor',['LCD_TEXT_COLOR',['../display_8h.html#a02c2094379f2719b7655ad83145641ae',1,'display.h']]]
 ];

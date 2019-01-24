@@ -1,5 +1,0 @@
-<map id="earthQuakeTask" name="earthQuakeTask">
-<area shape="rect" id="node1" title="EarthQuake Task." alt="" coords="5,5,124,31"/>
-<area shape="rect" id="node2" href="$sensors_8cpp.html#a0b967a04b0892a91fcc7e5db99528d2f" title="Task Context for EarthQuake detection." alt="" coords="172,5,336,31"/>
-<area shape="rect" id="node3" href="$sensors_8cpp.html#aaa069d2c3ac83726fd36418c31438dec" title=" " alt="" coords="384,5,498,31"/>
-</map>
