@@ -691,7 +691,6 @@ void gui_thread()
         char displayView[32];
         sprintf(displayView, "View: %d", currentView);
 
-<<<<<<< HEAD
         lcd.DrawHLine(10, 10, 460);
         lcd.SetFont(&Font8);
 
@@ -713,9 +712,6 @@ void gui_thread()
         lcd.DrawHLine(10, 20, 460);
 
         lcd.SetFont(&Font16);
-=======
-        displayNavbar();
->>>>>>> 368f37f77dc66ca6e220fb162dab39a7ceef7d29
 
         if (buildingNumber && roomNumber)
         {
