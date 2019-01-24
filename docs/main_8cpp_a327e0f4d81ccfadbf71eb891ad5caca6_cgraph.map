@@ -1,16 +1,10 @@
 <map id="setView" name="setView">
-<area shape="rect" id="node1" title="Set the View object." alt="" coords="5,216,73,241"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#afaa5f070126ac5184a648b484e7cf276" title="Clears the main display &amp; sets default colors." alt="" coords="263,179,357,204"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a852db55a060a56ad4faa2ac9230db7b8" title=" " alt="" coords="275,291,346,316"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#ac6a4826363dab38339c0c9c3c8eaf823" title="View 1 logic." alt="" coords="121,92,177,117"/>
-<area shape="rect" id="node12" href="$main_8cpp.html#a301095a2d01e5b5fc1969e5ef7dbda74" title="View 2 logic." alt="" coords="121,265,177,291"/>
-<area shape="rect" id="node13" href="$main_8cpp.html#add51cce3314459d9a8c556847efd0fd6" title="View 3 logic." alt="" coords="121,216,177,241"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a803f4867273f07b9850efab3d3724678" title="Displays temperature (celsius) &amp; humidity (humidity)" alt="" coords="248,129,373,155"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#ad7b80de2576645ecbd4e4b1fd7cd85f7" title="Displays current earthquake status." alt="" coords="225,31,396,56"/>
-<area shape="rect" id="node11" href="$main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077" title="Increases the current count or resets when counter_max is hit." alt="" coords="266,80,355,105"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#aed9f24d13d4a677eaac9376a6f067fc7" title=" " alt="" coords="475,129,558,155"/>
-<area shape="rect" id="node8" href="$main_8cpp.html#a1f8d13541fb77fc8eab6ff0c44209851" title="Detects earth quakes. Sets the red led to ON/OFF." alt="" coords="444,31,589,56"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#a8fe2756bc173a5774f2a21592b8ab72a" title=" " alt="" coords="670,5,717,31"/>
-<area shape="rect" id="node10" href="$main_8cpp.html#aaa069d2c3ac83726fd36418c31438dec" title=" " alt="" coords="637,55,751,80"/>
-<area shape="rect" id="node14" href="$main_8cpp.html#a95d614d7953632735a93de307afdf342" title=" " alt="" coords="280,228,341,253"/>
+<area shape="rect" id="node1" title="Set the View object." alt="" coords="5,105,73,131"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#afaa5f070126ac5184a648b484e7cf276" title="Clears the main display &amp; sets default colors." alt="" coords="121,5,215,31"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a852db55a060a56ad4faa2ac9230db7b8" title=" " alt="" coords="272,131,343,156"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ac6a4826363dab38339c0c9c3c8eaf823" title="View 1 logic." alt="" coords="140,55,196,80"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a301095a2d01e5b5fc1969e5ef7dbda74" title="View 2 logic." alt="" coords="140,156,196,181"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#add51cce3314459d9a8c556847efd0fd6" title="View 3 logic." alt="" coords="140,205,196,231"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077" title="Increases the current count or resets when counter_max is hit." alt="" coords="263,55,353,80"/>
+<area shape="rect" id="node8" href="$main_8cpp.html#a95d614d7953632735a93de307afdf342" title=" " alt="" coords="277,205,339,231"/>
 </map>

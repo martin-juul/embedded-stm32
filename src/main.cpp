@@ -1,7 +1,6 @@
 #include <mbed.h>
 #include "LCD_DISCO_F746NG.h"
 #include "TS_DISCO_F746NG.h"
-#include "DHT.h"
 #include "display.h"
 #include <iostream>
 #include "stm32746g_discovery_sd.h"
@@ -16,19 +15,18 @@ LCD_DISCO_F746NG lcd;
 // LCD Touch port
 TS_DISCO_F746NG ts;
 
-// On-board LED
-DigitalOut led1(LED1);
-// External LED (red)
-DigitalOut led2(D2);
-
 // External buzzer
 DigitalOut buzzer(D4);
 
 // External sensors
+<<<<<<< HEAD
 DHT dhtSensor(A0, SEN51035P);
 AnalogIn vibrationSensor(A1);
 AnalogIn lightSensor(A2);
 AnalogIn soundSensor(A3);
+=======
+AnalogIn soundSensor(A2);
+>>>>>>> 368f37f77dc66ca6e220fb162dab39a7ceef7d29
 
 InterruptIn viewBtn(D3);
 InterruptIn resetCounterBtn(BUTTON1);
@@ -104,6 +102,7 @@ void clearDisplay()
 // Sensors
 
 /**
+<<<<<<< HEAD
  * @brief Detects earth quakes. Sets the red led to ON/OFF.
  * 
  * @return int 
@@ -213,13 +212,15 @@ void noiseWarning()
 }
 
 /**
+=======
+>>>>>>> 368f37f77dc66ca6e220fb162dab39a7ceef7d29
  * @brief Displays current earthquake status
  * 
  */
 void displayEarthQuakeStatus()
 {
   char earth_quake[32];
-  sprintf(earth_quake, "Is Earthquake: %d", earthQuakeDetected());
+  // sprintf(earth_quake, "Is Earthquake: %d", earthQuakeDetected());
 
   lcd.DisplayStringAt(0, LINE(10), (uint8_t *)earth_quake, CENTER_MODE);
 }
@@ -370,6 +371,7 @@ void counter_thread()
  */
 void view1()
 {
+<<<<<<< HEAD
   displayCurrentHT();
   displayEarthQuakeStatus();
   displayLightStatus();
@@ -386,6 +388,9 @@ void view1()
 
     noiseThreadStarted = true;
   }
+=======
+  counterTick();
+>>>>>>> 368f37f77dc66ca6e220fb162dab39a7ceef7d29
 }
 
 /**
@@ -586,7 +591,6 @@ void switchView()
  */
 void boot()
 {
-  led1 = 1;
   lcd.Init();
   buzzer = 0;
 
@@ -609,6 +613,29 @@ void boot()
   wait(1.0f);
 
   clearDisplay();
+}
+
+void displayNavbar()
+{
+  lcd.DrawHLine(10, 10, 460);
+  lcd.DrawHLine(10, 20, 460);
+
+  lcd.SetFont(&Font8);
+
+  lcd.DisplayStringAt(10, 12, (uint8_t *)"Hercules v1.0", LEFT_MODE);
+
+  if (BSP_SD_IsDetected())
+  {
+    lcd.SetBackColor(LCD_TEXT_COLOR);
+    lcd.SetTextColor(LCD_TEXT_BACKGROUND);
+  }
+
+  lcd.DisplayStringAt(450, 12, (uint8_t *)" SD ", LEFT_MODE);
+
+  lcd.SetBackColor(LCD_TEXT_BACKGROUND);
+  lcd.SetTextColor(LCD_TEXT_COLOR);
+
+  lcd.SetFont(&Font16);
 }
 
 /**
@@ -636,10 +663,17 @@ void gui_thread()
         x = TS_State.touchX[idx];
         y = TS_State.touchY[idx];
 
+<<<<<<< HEAD
         int y_hitbox_min = 240 - 50;
         int y_hitbox_max = 240 + 50;
 
         int x_hitbox_min = 410 - 50;
+=======
+        int y_hitbox_min = 240 - 10;
+        int y_hitbox_max = 240 + 50;
+
+        int x_hitbox_min = 410 - 10;
+>>>>>>> 368f37f77dc66ca6e220fb162dab39a7ceef7d29
         int x_hitbox_max = 410 + 50;
 
         if ((y >= y_hitbox_min && y <= y_hitbox_max) && (x >= x_hitbox_min && x <= x_hitbox_max))
@@ -657,6 +691,7 @@ void gui_thread()
         char displayView[32];
         sprintf(displayView, "View: %d", currentView);
 
+<<<<<<< HEAD
         lcd.DrawHLine(10, 10, 460);
         lcd.SetFont(&Font8);
 
@@ -678,6 +713,9 @@ void gui_thread()
         lcd.DrawHLine(10, 20, 460);
 
         lcd.SetFont(&Font16);
+=======
+        displayNavbar();
+>>>>>>> 368f37f77dc66ca6e220fb162dab39a7ceef7d29
 
         if (buildingNumber && roomNumber)
         {

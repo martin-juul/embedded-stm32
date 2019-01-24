@@ -1,6 +1,0 @@
-<map id="displayEarthQuakeStatus" name="displayEarthQuakeStatus">
-<area shape="rect" id="node1" title="Displays current earthquake status." alt="" coords="5,31,177,56"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#a1f8d13541fb77fc8eab6ff0c44209851" title="Detects earth quakes. Sets the red led to ON/OFF." alt="" coords="225,31,369,56"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#aaa069d2c3ac83726fd36418c31438dec" title=" " alt="" coords="417,5,531,31"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a8fe2756bc173a5774f2a21592b8ab72a" title=" " alt="" coords="451,55,498,80"/>
-</map>

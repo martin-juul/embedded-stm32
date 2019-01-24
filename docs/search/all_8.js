@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['prev_5fnb_5ftouches',['prev_nb_touches',['../main_8cpp.html#aec2af95852bc4cf10c77a855bbaf5ccf',1,'main.cpp']]]
+  ['home_5fview_2ecpp',['home_view.cpp',['../home__view_8cpp.html',1,'']]],
+  ['homeview',['HomeView',['../class_home_view.html',1,'']]]
 ];

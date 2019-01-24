@@ -47,6 +47,18 @@ The SD card state is read from `BSP_SD_IsDetected()`
 
 This was meant to play tones aligning with the songs `Danger Zone` & `The Final Countdown`. The buzzer was annoyingly loud, and needs a resistor for being bearable.
 
+## Connecting external sensors
+
+On the Arduino base shield:
+
+| Sensor  | Pin  |
+|---|---|
+| LED SOCKET KIT  | D2  |
+| Grove - Button  | D3  |
+| Grove - Buzzer  |  D4 |
+| Piezo Vibration Sensor  | A1  |
+| Grove - Sound Sensor  | A2  |
+
 ## Roadmap
 
 + Split logic into its own seperate classes. Preferably with a ViewComposer, that abstracts the LCD and Touch logic away.

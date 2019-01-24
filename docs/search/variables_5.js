@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['screen',['screen',['../display_8cpp.html#ab892e307a1d5f6050ac29ab0faceb0be',1,'display.cpp']]],
-  ['status',['status',['../main_8cpp.html#ade818037fd6c985038ff29656089758d',1,'main.cpp']]]
+  ['earthquakethread',['earthQuakeThread',['../sensors_8cpp.html#a1aff112983eabd6a6693e50f83f0687c',1,'sensors.cpp']]],
+  ['earthquakethreadrunning',['earthQuakeThreadRunning',['../sensors_8cpp.html#a5094b9aab30c65615476bbc74e4dcdc2',1,'sensors.cpp']]]
 ];

@@ -66,7 +66,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a href="https://travis-ci.org/martin-juul/embedded-stm32"><img src="https://travis-ci.org/martin-juul/embedded-stm32.svg?branch=master" alt="Build Status" class="inline"/>
-</a> | <a href="https://martin-juul.github.io/embedded-stm32/">Docs</a></p>
+</a> | <a href="https://martin-juul.github.io/embedded-stm32/">Docs</a> | <a href="https://github.com/martin-juul/embedded-stm32">Repository</a></p>
 <h2>Overview</h2>
 <p>The interface is currently divided into 3 views.</p>
 <h3>Home</h3>
@@ -75,14 +75,17 @@ $(function() {
 <li>Counter</li>
 <li>Temp sensor reading</li>
 <li>Humidity reading</li>
+<li>Dew point</li>
 <li>Earthquake detection</li>
 </ul>
 <h4>Counter</h4>
 <p>The counter can be reset using the on-board USER_B1 button (the blue one).</p>
 <h4>Temperature &amp; Humidity</h4>
 <p>These readings arrives from the Grove DHT sensor. It is read faster than the sensor can keep up with, therefore it handles errors - so it does not disturb the display.</p>
+<h4>Dew point</h4>
+<p>The dew point is the temperature to which air must be cooled to become saturated with water vapour. When further cooled, the airborne water vapor will condense to form liquid water. When air cools to its dew point through contact with a surface that is colder than the air, water will condense on the surface. - Wikipedia</p>
 <h4>Earthquake detection</h4>
-<p>This works via the Piezo Vibration Sensor. The amount of hz needed for earthquake detection is only for show, and not an actual real-life scale. On detection <code>Is Earthquake</code> displays 1, and the external <code>LED SOCKET KIT</code> with a red LED lights up.</p>
+<p>This works via the Piezo Vibration Sensor. The amount of hz needed for earthquake detection is only for show, and not an actual real-life scale. On detection <code>Is Earthquake</code> displays 1, and the external <code><a class="el" href="class_l_e_d.html">LED</a> SOCKET KIT</code> with a red <a class="el" href="class_l_e_d.html">LED</a> lights up.</p>
 <h3>System</h3>
 <p>Features</p>
 <ul>
@@ -93,6 +96,22 @@ $(function() {
 <p>The SD card state is read from <code>BSP_SD_IsDetected()</code></p>
 <h3>Radio Player</h3>
 <p>This was meant to play tones aligning with the songs <code>Danger Zone</code> &amp; <code>The Final Countdown</code>. The buzzer was annoyingly loud, and needs a resistor for being bearable.</p>
+<h2>Connecting external sensors</h2>
+<p>On the Arduino base shield:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Sensor  </th><th class="markdownTableHeadNone">Pin   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="class_l_e_d.html">LED</a> SOCKET KIT  </td><td class="markdownTableBodyNone">D2   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Grove - Button  </td><td class="markdownTableBodyNone">D3   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Grove - Buzzer  </td><td class="markdownTableBodyNone">D4   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Piezo Vibration Sensor  </td><td class="markdownTableBodyNone">A1   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Grove - Sound Sensor  </td><td class="markdownTableBodyNone">A2   </td></tr>
+</table>
 <h2>Roadmap</h2>
 <ul>
 <li>Split logic into its own seperate classes. Preferably with a ViewComposer, that abstracts the LCD and Touch logic away.</li>
@@ -113,7 +132,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 08:47:39 for Hercules by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 17 2019 19:02:26 for Hercules by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
