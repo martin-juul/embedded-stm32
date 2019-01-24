@@ -663,17 +663,10 @@ void gui_thread()
         x = TS_State.touchX[idx];
         y = TS_State.touchY[idx];
 
-<<<<<<< HEAD
         int y_hitbox_min = 240 - 50;
         int y_hitbox_max = 240 + 50;
 
         int x_hitbox_min = 410 - 50;
-=======
-        int y_hitbox_min = 240 - 10;
-        int y_hitbox_max = 240 + 50;
-
-        int x_hitbox_min = 410 - 10;
->>>>>>> 368f37f77dc66ca6e220fb162dab39a7ceef7d29
         int x_hitbox_max = 410 + 50;
 
         if ((y >= y_hitbox_min && y <= y_hitbox_max) && (x >= x_hitbox_min && x <= x_hitbox_max))
