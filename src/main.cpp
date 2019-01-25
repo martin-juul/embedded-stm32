@@ -30,9 +30,6 @@ AnalogIn vibrationSensor(A1);
 AnalogIn lightSensor(A2);
 AnalogIn soundSensor(A3);
 
-InterruptIn viewBtn(D3);
-InterruptIn resetCounterBtn(BUTTON1);
-
 int currentView = 1;
 int viewCount = 2;
 
@@ -73,7 +70,7 @@ void counterTick()
   char display_int[32];
   sprintf(display_int, "Count: %04u", counter_current);
 
-  if(1 == currentView)
+  if (1 == currentView)
   {
     lcd.DisplayStringAt(0, LINE(4), (uint8_t *)display_int, CENTER_MODE);
   }
@@ -224,17 +221,6 @@ void displayEarthQuakeStatus()
   lcd.DisplayStringAt(0, LINE(10), (uint8_t *)earth_quake, CENTER_MODE);
 }
 
-/**
- * @brief Resets the counter
- * 
- */
-void resetCounter()
-{
-  usbCom.printf("[Toggle]: Counter reset!\n");
-
-  counter_current = 0;
-}
-
 // Views
 
 int device_setup_building_no = 0;
@@ -248,6 +234,17 @@ void drawButton(uint16_t xPos, u_int16_t yPos, uint8_t *Text, int dia = 10, int 
   lcd.SetBackColor(LCD_TEXT_BACKGROUND);
 }
 
+/**
+ * @brief Checks if a button has been hit
+ * 
+ * @param xPos 
+ * @param yPos 
+ * @param cursor_x 
+ * @param cursor_y 
+ * @param hitBoxAera 
+ * @return true 
+ * @return false 
+ */
 bool buttonHit(uint16_t xPos, uint16_t yPos, uint16_t cursor_x, uint16_t cursor_y, uint16_t hitBoxAera = 20)
 {
   int y_hitbox_min = yPos - hitBoxAera;
@@ -305,8 +302,6 @@ void deviceSetup()
     {
       x = TS_State.touchX[idx];
       y = TS_State.touchY[idx];
-      sprintf((char *)text, "Touch %d: x=%d y=%d    ", idx + 1, x, y);
-      lcd.DisplayStringAt(0, LINE(idx + 1), (uint8_t *)&text, LEFT_MODE);
 
       // Building adjustment
       if (buttonHit(building_incr_xPos, building_incr_yPos, x, y))
@@ -356,7 +351,7 @@ bool counterThreadStarted = false;
 
 void counter_thread()
 {
-  while(counterThreadStarted)
+  while (counterThreadStarted)
   {
     counterTick();
 
@@ -374,14 +369,15 @@ void view1()
   displayEarthQuakeStatus();
   displayLightStatus();
 
-  if(!counterThreadStarted)
+  if (!counterThreadStarted)
   {
     counterThread.start(counter_thread);
 
     counterThreadStarted = true;
   }
 
-  if (!noiseThreadStarted) {
+  if (!noiseThreadStarted)
+  {
     noiseThread.start(noiseWarning);
 
     noiseThreadStarted = true;
@@ -425,8 +421,6 @@ void view2()
     {
       x = TS_State.touchX[idx];
       y = TS_State.touchY[idx];
-      sprintf((char *)text, "Touch %d: x=%d y=%d    ", idx + 1, x, y);
-      lcd.DisplayStringAt(0, LINE(idx + 1), (uint8_t *)&text, LEFT_MODE);
 
       // Building adjustment
       if (buttonHit(tempBtnCelsiusPos, tempBtnYpos, x, y))
@@ -455,66 +449,6 @@ void view2()
 
         wait(0.5f);
       }
-    }
-  }
-}
-
-/**
- * @brief View 3 logic
- * 
- */
-void view3()
-{
-  status = ts.Init(lcd.GetXSize(), lcd.GetYSize());
-  if (status != TS_OK)
-  {
-    usbCom.printf("Touchscreen initialization failed!\n");
-  }
-
-  lcd.DisplayStringAt((uint16_t)10, VIEW3_BTN_1_Y, (uint8_t *)"Danger Zone", CENTER_MODE);
-  lcd.DisplayStringAt((uint16_t)10, VIEW3_BTN_2_Y, (uint8_t *)"Final Countdown", CENTER_MODE);
-
-  ts.GetState(&TS_State);
-  if (TS_State.touchDetected)
-  {
-    // Clear lines corresponding to old touches coordinates
-    if (TS_State.touchDetected < prev_nb_touches)
-    {
-      for (idx = (TS_State.touchDetected + 1); idx <= 5; idx++)
-      {
-        lcd.ClearStringLine(idx);
-      }
-    }
-    prev_nb_touches = TS_State.touchDetected;
-
-    cleared = 0;
-
-    for (idx = 0; idx < TS_State.touchDetected; idx++)
-    {
-      x = TS_State.touchX[idx];
-      y = TS_State.touchY[idx];
-      sprintf((char *)text, "Touch %d: x=%d y=%d    ", idx + 1, x, y);
-      lcd.DisplayStringAt(0, LINE(idx + 1), (uint8_t *)&text, LEFT_MODE);
-
-      int y_hitbox_min = VIEW3_BTN_1_Y - 10;
-      int y_hitbox_max = VIEW3_BTN_1_Y + 10;
-
-      if (y >= y_hitbox_min && y <= y_hitbox_max)
-      {
-        buzzer = 1;
-
-        wait(.5);
-
-        buzzer = 0;
-      }
-    }
-  }
-  else
-  {
-    if (!cleared)
-    {
-      lcd.DisplayStringAt(0, LINE(0), (uint8_t *)&text, LEFT_MODE);
-      cleared = 1;
     }
   }
 }
@@ -660,7 +594,8 @@ void gui_thread()
         lcd.DrawHLine(10, 10, 460);
         lcd.SetFont(&Font8);
 
-        lcd.DisplayStringAt(10, 12, (uint8_t *)"Hercules v1.0", LEFT_MODE);
+        lcd.SetBackColor(LCD_BACKGROUND);
+        lcd.DisplayStringAt(10, 12, (uint8_t *)"Hercules v1.1", LEFT_MODE);
         lcd.DrawVLine(80, 10, 11);
 
         if (buildingNumber && roomNumber)
@@ -675,8 +610,9 @@ void gui_thread()
           lcd.DisplayStringAt(150, 12, (uint8_t *)room, LEFT_MODE);
         }
 
-        lcd.DrawHLine(10, 20, 460);
+        lcd.SetBackColor(LCD_TEXT_BACKGROUND);
 
+        lcd.DrawHLine(10, 20, 460);
         lcd.SetFont(&Font16);
 
         if (buildingNumber && roomNumber)
@@ -701,9 +637,6 @@ Thread guiThread;
 int main()
 {
   boot();
-
-  viewBtn.rise(&switchView);
-  resetCounterBtn.rise(&resetCounter);
 
   // The data cache is disabled to avoid screen flickering.
   SCB_CleanDCache();
