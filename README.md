@@ -6,6 +6,15 @@
 
 The interface is currently divided into 3 views.
 
+### Device Setup
+
+Features
+
++ Enter building number
++ Enter room number
+
+These are displayed in the top nav.
+
 ### Home
 
 Features
@@ -15,10 +24,11 @@ Features
 + Humidity reading
 + Dew point
 + Earthquake detection
++ Noise warning
 
 #### Counter
 
-The counter can be reset using the on-board USER_B1 button (the blue one).
+Counts from 0 to 9999 & resets.
 
 #### Temperature & Humidity
 
@@ -38,14 +48,11 @@ Features
 
 + I2C Clock speed display
 + SD Card detection display
++ Set temperature scale to Celsius, Fahrenheit & Kelvin
 
 This view shows the I2C clock speed, converted to kHZ.
 
 The SD card state is read from `BSP_SD_IsDetected()`
-
-### Radio Player
-
-This was meant to play tones aligning with the songs `Danger Zone` & `The Final Countdown`. The buzzer was annoyingly loud, and needs a resistor for being bearable.
 
 ## Connecting external sensors
 
@@ -54,9 +61,10 @@ On the Arduino base shield:
 | Sensor  | Pin  |
 |---|---|
 | LED SOCKET KIT  | D2  |
-| Grove - Button  | D3  |
 | Grove - Buzzer  |  D4 |
+| Grove - Temperature & Humidity Sensor Pro v1.2  |  A0 |
 | Piezo Vibration Sensor  | A1  |
+| Grove - Light Sensor  | A2  |
 | Grove - Sound Sensor  | A2  |
 
 ## Roadmap

@@ -1,4 +1,4 @@
 <map id="noiseWarning" name="noiseWarning">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,108,31"/>
+<area shape="rect" id="node1" title="Displays a warning when the noise is too much." alt="" coords="5,5,108,31"/>
 <area shape="rect" id="node2" href="$main_8cpp.html#a638eb43cf3478798d7a7df992d618534" title=" " alt="" coords="156,5,256,31"/>
 </map>

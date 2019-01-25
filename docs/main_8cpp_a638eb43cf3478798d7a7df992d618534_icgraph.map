@@ -1,6 +1,6 @@
 <map id="soundSensor" name="soundSensor">
 <area shape="rect" id="node1" title=" " alt="" coords="741,5,840,31"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#a4992911e289e01be2476c1e53cc01df1" title=" " alt="" coords="590,5,693,31"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a4992911e289e01be2476c1e53cc01df1" title="Displays a warning when the noise is too much." alt="" coords="590,5,693,31"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#ac6a4826363dab38339c0c9c3c8eaf823" title="View 1 logic." alt="" coords="487,5,542,31"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6" title="Set the View object." alt="" coords="371,5,439,31"/>
 <area shape="rect" id="node5" href="$main_8cpp.html#a55c0de4a6bb287b440332397ed57e731" title="Gui Thread." alt="" coords="104,5,188,31"/>

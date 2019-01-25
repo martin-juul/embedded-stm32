@@ -1,6 +1,6 @@
 <map id="drawButton" name="drawButton">
 <area shape="rect" id="node1" title=" " alt="" coords="617,31,706,56"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#ad8565aaf546f0a345b7633334c9dee61" title=" " alt="" coords="371,5,466,31"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#ad8565aaf546f0a345b7633334c9dee61" title="Initial device setup view." alt="" coords="371,5,466,31"/>
 <area shape="rect" id="node5" href="$main_8cpp.html#a301095a2d01e5b5fc1969e5ef7dbda74" title="View 2 logic." alt="" coords="514,56,569,81"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#a55c0de4a6bb287b440332397ed57e731" title="Gui Thread." alt="" coords="104,56,188,81"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Application entry point." alt="" coords="5,56,56,81"/>

@@ -69,6 +69,13 @@ $(function() {
 </a> | <a href="https://martin-juul.github.io/embedded-stm32/">Docs</a> | <a href="https://github.com/martin-juul/embedded-stm32">Repository</a></p>
 <h2>Overview</h2>
 <p>The interface is currently divided into 3 views.</p>
+<h3>Device Setup</h3>
+<p>Features</p>
+<ul>
+<li>Enter building number</li>
+<li>Enter room number</li>
+</ul>
+<p>These are displayed in the top nav.</p>
 <h3>Home</h3>
 <p>Features</p>
 <ul>
@@ -77,9 +84,10 @@ $(function() {
 <li>Humidity reading</li>
 <li>Dew point</li>
 <li>Earthquake detection</li>
+<li>Noise warning</li>
 </ul>
 <h4>Counter</h4>
-<p>The counter can be reset using the on-board USER_B1 button (the blue one).</p>
+<p>Counts from 0 to 9999 &amp; resets.</p>
 <h4>Temperature &amp; Humidity</h4>
 <p>These readings arrives from the Grove DHT sensor. It is read faster than the sensor can keep up with, therefore it handles errors - so it does not disturb the display.</p>
 <h4>Dew point</h4>
@@ -91,11 +99,10 @@ $(function() {
 <ul>
 <li>I2C Clock speed display</li>
 <li>SD Card detection display</li>
+<li>Set temperature scale to Celsius, Fahrenheit &amp; Kelvin</li>
 </ul>
 <p>This view shows the I2C clock speed, converted to kHZ.</p>
 <p>The SD card state is read from <code>BSP_SD_IsDetected()</code></p>
-<h3>Radio Player</h3>
-<p>This was meant to play tones aligning with the songs <code>Danger Zone</code> &amp; <code>The Final Countdown</code>. The buzzer was annoyingly loud, and needs a resistor for being bearable.</p>
 <h2>Connecting external sensors</h2>
 <p>On the Arduino base shield:</p>
 <table class="markdownTable">
@@ -104,12 +111,14 @@ $(function() {
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">LED SOCKET KIT  </td><td class="markdownTableBodyNone">D2   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Grove - Button  </td><td class="markdownTableBodyNone">D3   </td></tr>
-<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Grove - Buzzer  </td><td class="markdownTableBodyNone">D4   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Grove - Temperature &amp; Humidity Sensor Pro v1.2  </td><td class="markdownTableBodyNone">A0   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Piezo Vibration Sensor  </td><td class="markdownTableBodyNone">A1   </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Grove - Light Sensor  </td><td class="markdownTableBodyNone">A2   </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Grove - Sound Sensor  </td><td class="markdownTableBodyNone">A2   </td></tr>
 </table>
 <h2>Roadmap</h2>
@@ -132,7 +141,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 25 2019 08:16:24 for Hercules by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 25 2019 08:38:24 for Hercules by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

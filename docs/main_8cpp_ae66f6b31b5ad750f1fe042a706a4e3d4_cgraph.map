@@ -5,7 +5,7 @@
 <area shape="rect" id="node3" href="$main_8cpp.html#a95d614d7953632735a93de307afdf342" title=" " alt="" coords="249,55,310,80"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#afaa5f070126ac5184a648b484e7cf276" title="Clears the main display &amp; sets default colors." alt="" coords="487,107,581,132"/>
 <area shape="rect" id="node5" href="$main_8cpp.html#a6b71ffd718e2af00cebeb05560b44be7" title=" " alt="" coords="256,5,303,31"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#ad8565aaf546f0a345b7633334c9dee61" title=" " alt="" coords="487,357,581,383"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ad8565aaf546f0a345b7633334c9dee61" title="Initial device setup view." alt="" coords="487,357,581,383"/>
 <area shape="rect" id="node10" href="$main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6" title="Set the View object." alt="" coords="371,207,439,232"/>
 <area shape="rect" id="node26" href="$main_8cpp.html#a00d66a08391b1245e702d9c5c5ca3916" title="Switches the current view." alt="" coords="236,257,323,283"/>
 <area shape="rect" id="node8" href="$main_8cpp.html#adf9790348cb7aa4938c642e76eaa2d55" title="Checks if a button has been hit." alt="" coords="678,357,753,383"/>
@@ -16,8 +16,8 @@
 <area shape="rect" id="node13" href="$main_8cpp.html#a803f4867273f07b9850efab3d3724678" title="Displays temperature &amp; humidity (humidity)" alt="" coords="653,160,778,185"/>
 <area shape="rect" id="node15" href="$main_8cpp.html#ad7b80de2576645ecbd4e4b1fd7cd85f7" title="Displays current earthquake status." alt="" coords="629,209,801,235"/>
 <area shape="rect" id="node19" href="$main_8cpp.html#ada8fd9a1f3f47fed5a5b3f18c50b0f62" title="Says &quot;godnat&quot; when dark, &quot;goddag&quot; when light." alt="" coords="651,12,780,37"/>
-<area shape="rect" id="node21" href="$main_8cpp.html#a6fd74b8039c9a5d8c8c7e4bf09138f91" title=" " alt="" coords="660,61,771,87"/>
-<area shape="rect" id="node23" href="$main_8cpp.html#a4992911e289e01be2476c1e53cc01df1" title=" " alt="" coords="664,111,767,136"/>
+<area shape="rect" id="node21" href="$main_8cpp.html#a6fd74b8039c9a5d8c8c7e4bf09138f91" title="Counter task." alt="" coords="660,61,771,87"/>
+<area shape="rect" id="node23" href="$main_8cpp.html#a4992911e289e01be2476c1e53cc01df1" title="Displays a warning when the noise is too much." alt="" coords="664,111,767,136"/>
 <area shape="rect" id="node14" href="$main_8cpp.html#aed9f24d13d4a677eaac9376a6f067fc7" title=" " alt="" coords="880,160,962,185"/>
 <area shape="rect" id="node16" href="$main_8cpp.html#a1f8d13541fb77fc8eab6ff0c44209851" title="Detects earth quakes. Sets the red led to ON/OFF." alt="" coords="849,209,994,235"/>
 <area shape="rect" id="node17" href="$main_8cpp.html#a8fe2756bc173a5774f2a21592b8ab72a" title=" " alt="" coords="1075,184,1122,209"/>

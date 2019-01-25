@@ -7,6 +7,7 @@
 #include "stm32746g_discovery_sd.h"
 #include "stm32746g_discovery_sdram.h"
 #include "rtos.h"
+#include "FileSystem.h"
 
 // Serial USB COM port
 Serial usbCom(USBTX, USBRX);
@@ -188,6 +189,10 @@ void displayLightStatus()
 Thread noiseThread;
 bool noiseThreadStarted = false;
 
+/**
+ * @brief Displays a warning when the noise is too much
+ * 
+ */
 void noiseWarning()
 {
   while (noiseThreadStarted)
@@ -261,6 +266,10 @@ bool buttonHit(uint16_t xPos, uint16_t yPos, uint16_t cursor_x, uint16_t cursor_
   return false;
 }
 
+/**
+ * @brief Initial device setup view
+ * 
+ */
 void deviceSetup()
 {
   char str_building[32];
@@ -349,6 +358,10 @@ void deviceSetup()
 Thread counterThread;
 bool counterThreadStarted = false;
 
+/**
+ * @brief Counter task
+ * 
+ */
 void counter_thread()
 {
   while (counterThreadStarted)

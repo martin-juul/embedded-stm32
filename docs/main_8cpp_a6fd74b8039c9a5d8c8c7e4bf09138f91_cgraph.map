@@ -1,4 +1,4 @@
 <map id="counter_thread" name="counter_thread">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,116,31"/>
+<area shape="rect" id="node1" title="Counter task." alt="" coords="5,5,116,31"/>
 <area shape="rect" id="node2" href="$main_8cpp.html#a2d38dd8270213d1fcd244b0b810ff077" title="Increases the current count or resets when counter_max is hit." alt="" coords="164,5,254,31"/>
 </map>
