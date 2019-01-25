@@ -199,7 +199,7 @@ void noiseWarning()
   {
     float noiseLevel = soundSensor.read();
 
-    if (noiseLevel >= 0.35 && 1 == currentView)
+    if (noiseLevel >= 0.5 && 1 == currentView)
     {
       lcd.DisplayStringAt(0, LINE(13), (uint8_t *)"Noise warning!", CENTER_MODE);
     }
@@ -231,6 +231,16 @@ void displayEarthQuakeStatus()
 int device_setup_building_no = 0;
 int device_setup_room_no = 0;
 
+/**
+ * @brief Draw a round button on screen
+ * 
+ * @param xPos 
+ * @param yPos 
+ * @param Text 
+ * @param dia 
+ * @param xOffset 
+ * @param yOffset 
+ */
 void drawButton(uint16_t xPos, u_int16_t yPos, uint8_t *Text, int dia = 10, int xOffset = 5, int yOffset = 7)
 {
   lcd.DrawCircle(xPos, yPos, dia);
@@ -312,19 +322,21 @@ void deviceSetup()
       x = TS_State.touchX[idx];
       y = TS_State.touchY[idx];
 
+      float btnPressWait = 0.3f;
+
       // Building adjustment
       if (buttonHit(building_incr_xPos, building_incr_yPos, x, y))
       {
         device_setup_building_no++;
 
-        wait(0.5f);
+        wait(btnPressWait);
       }
 
       if (buttonHit(building_decr_xPos, building_decr_yPos, x, y))
       {
         device_setup_building_no--;
 
-        wait(0.5f);
+        wait(btnPressWait);
       }
 
       // Room adjustment
@@ -332,14 +344,14 @@ void deviceSetup()
       {
         device_setup_room_no++;
 
-        wait(0.5f);
+        wait(btnPressWait);
       }
 
       if (buttonHit(room_decr_xPos, room_incr_yPos, x, y))
       {
         device_setup_room_no--;
 
-        wait(0.5f);
+        wait(btnPressWait);
       }
 
       if (buttonHit(save_btn_xPos, save_btn_yPos, x, y))
