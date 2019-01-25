@@ -1,6 +1,6 @@
 <map id="view2" name="view2">
 <area shape="rect" id="node1" title="View 2 logic." alt="" coords="5,55,61,80"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#adf9790348cb7aa4938c642e76eaa2d55" title=" " alt="" coords="116,5,190,31"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#adf9790348cb7aa4938c642e76eaa2d55" title="Checks if a button has been hit." alt="" coords="116,5,190,31"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#ad5cc3abe0aaece272305f54486f8ddc6" title=" " alt="" coords="109,55,198,80"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#a852db55a060a56ad4faa2ac9230db7b8" title=" " alt="" coords="118,104,189,129"/>
 </map>

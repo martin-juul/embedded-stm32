@@ -1,6 +1,5 @@
 <map id="buzzer" name="buzzer">
-<area shape="rect" id="node1" title=" " alt="" coords="207,31,268,56"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#a35964baf83704a1d649c88760d4bec2f" title="Setup for app." alt="" coords="108,5,155,31"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#add51cce3314459d9a8c556847efd0fd6" title="View 3 logic." alt="" coords="104,55,159,80"/>
+<area shape="rect" id="node1" title=" " alt="" coords="199,5,260,31"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a35964baf83704a1d649c88760d4bec2f" title="Setup for app." alt="" coords="104,5,151,31"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Application entry point." alt="" coords="5,5,56,31"/>
 </map>

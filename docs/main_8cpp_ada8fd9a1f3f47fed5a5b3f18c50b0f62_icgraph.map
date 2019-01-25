@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="Says &quot;godnat&quot; when dark, &quot;goddag&quot; when light." alt="" coords="590,31,720,56"/>
 <area shape="rect" id="node2" href="$main_8cpp.html#ac6a4826363dab38339c0c9c3c8eaf823" title="View 1 logic." alt="" coords="487,31,542,56"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6" title="Set the View object." alt="" coords="371,31,439,56"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a00d66a08391b1245e702d9c5c5ca3916" title="Switches the current view." alt="" coords="236,56,323,81"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a55c0de4a6bb287b440332397ed57e731" title="Gui Thread." alt="" coords="104,5,188,31"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a00d66a08391b1245e702d9c5c5ca3916" title="Switches the current view." alt="" coords="236,5,323,31"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a55c0de4a6bb287b440332397ed57e731" title="Gui Thread." alt="" coords="104,31,188,56"/>
 <area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Application entry point." alt="" coords="5,31,56,56"/>
 </map>

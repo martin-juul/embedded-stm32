@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['resetcounter',['resetCounter',['../main_8cpp.html#a758fa7cb3c572ae21c3f43fefe205fd5',1,'main.cpp']]],
-  ['resetcounterbtn',['resetCounterBtn',['../main_8cpp.html#a7a0ec1f1c5c7d5c80a55d3e6a35a89c7',1,'main.cpp']]]
+  ['setview',['setView',['../main_8cpp.html#a327e0f4d81ccfadbf71eb891ad5caca6',1,'main.cpp']]],
+  ['soundsensor',['soundSensor',['../main_8cpp.html#a638eb43cf3478798d7a7df992d618534',1,'main.cpp']]],
+  ['string',['String',['../class_display.html#a86dbac1f487573bc93a6684e31c4c094',1,'Display']]],
+  ['switchview',['switchView',['../main_8cpp.html#a00d66a08391b1245e702d9c5c5ca3916',1,'main.cpp']]]
 ];
